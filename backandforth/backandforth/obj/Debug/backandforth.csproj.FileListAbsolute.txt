@@ -1,0 +1,7 @@
+E:\Crestron\SIMPL#\JSON\backandforth\backandforth\bin\Debug\backandforth.dll
+E:\Crestron\SIMPL#\JSON\backandforth\backandforth\bin\Debug\backandforth.pdb
+E:\Crestron\SIMPL#\JSON\backandforth\backandforth\bin\Debug\SimplSharpCustomAttributesInterface.dll
+E:\Crestron\SIMPL#\JSON\backandforth\backandforth\bin\Debug\SimplSharpHelperInterface.dll
+E:\Crestron\SIMPL#\JSON\backandforth\backandforth\obj\Debug\ResolveAssemblyReference.cache
+E:\Crestron\SIMPL#\JSON\backandforth\backandforth\obj\Debug\backandforth.dll
+E:\Crestron\SIMPL#\JSON\backandforth\backandforth\obj\Debug\backandforth.pdb

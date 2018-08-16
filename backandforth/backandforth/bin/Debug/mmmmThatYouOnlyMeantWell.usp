@@ -1,0 +1,31 @@
+#SYMBOL_NAME "mmmmThatYouOnlyMeantWell"
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+
+#USER_SIMPLSHARP_LIBRARY "backandforth"
+DIGITAL_INPUT init;
+                
+STRING_OUTPUT Title;
+                 
+CallBackTesting myCallBackTest;
+               
+callback function FromSSharp(string _title)
+{
+	Title = "S+ Callback. Movie title: " + _title;
+	
+}
+
+push init
+{
+	RegisterDelegate(myCallBackTest, HeySimplPlus, FromSSharp);
+    myCallBackTest.Setup();
+}
+
+Function Main()
+{
+    WaitForInitializationComplete();
+         
+}
+
+

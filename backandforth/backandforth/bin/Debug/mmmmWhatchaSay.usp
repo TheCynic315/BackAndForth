@@ -1,0 +1,40 @@
+#SYMBOL_NAME "mmmmWhatchaSay"
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+
+#USER_SIMPLSHARP_LIBRARY "backandforth"
+
+DIGITAL_INPUT init;
+
+ANALOG_INPUT _ID;
+
+STRING_OUTPUT releasedate;
+                 
+EventTesting myEventTest;
+
+callback function FromSSharp(string _date)
+{
+	releasedate = "S+ Callback. Release Date: " + _date;
+}
+               
+push init
+{
+	RegisterDelegate(myEventTest, HeySimplPlus, FromSSharp);
+	myEventTest.Setup();
+}	
+
+change _ID
+{
+	myEventTest.GetData(_ID);
+
+}
+
+
+Function Main()
+{
+    WaitForInitializationComplete();
+           
+}
+
+
